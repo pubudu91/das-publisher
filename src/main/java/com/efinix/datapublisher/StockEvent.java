@@ -3,12 +3,12 @@ package com.efinix.datapublisher;
 import java.util.HashMap;
 
 /**
- * Created by pubudu on 6/22/16.
+ * Created by dilip on 23/06/16.
  */
-public class Event {
+public class StockEvent {
     private HashMap<String, String> metaData;
     private HashMap<String, Double> correlationData;
-    private StockQuote payloadData;
+    private Stock payloadData;
 
     public HashMap<String, String> getMetaData() {
         return metaData;
@@ -26,11 +26,11 @@ public class Event {
         this.correlationData = correlationData;
     }
 
-    public StockQuote getPayloadData() {
+    public Stock getPayloadData() {
         return payloadData;
     }
 
-    public void setPayloadData(StockQuote payloadData) {
+    public void setPayloadData(Stock payloadData) {
         this.payloadData = payloadData;
     }
 }

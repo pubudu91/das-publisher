@@ -4,16 +4,27 @@ package com.efinix.datapublisher;
  * Created by dilip on 23/06/16.
  */
 public class Stock {
-    private double price;
+    private String Symbol;
+    private double Price;
 
-    public Stock(double price){
-        this.price = price;
+    public Stock(String symbol, double price) {
+        Symbol = symbol;
+        Price = price;
     }
+
+    public String getSymbol() {
+        return Symbol;
+    }
+
+    public void setSymbol(String symbol) {
+        Symbol = symbol;
+    }
+
     public double getPrice() {
-        return price;
+        return Price;
     }
 
     public void setPrice(double price) {
-        this.price = price;
+        Price = price;
     }
 }
